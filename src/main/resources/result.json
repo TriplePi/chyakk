@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "name": "BANK",
+  "accountList": [
+    {
+      "id": 2,
+      "currency": "USD",
+      "balance": 100.0
+    }
+  ]
+}
