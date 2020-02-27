@@ -1,23 +1,16 @@
-package com.triplepi.chyak_tutor.domain;
+package com.triplepi.chyak_tutor.dto;
 
-
+import com.triplepi.chyak_tutor.domain.Currency;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import java.util.Objects;
-
-@Entity
 @Data
 @NoArgsConstructor
 @Builder
-public class Account {
+public class AccountDTO {
 
-    @Id
     private Long id;
     private Currency currency;
     private Double balance = 0d;
-
 }
