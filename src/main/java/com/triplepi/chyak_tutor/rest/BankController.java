@@ -5,6 +5,7 @@ import com.triplepi.chyak_tutor.service.BankService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.ZoneId;
 import java.util.List;
 
 @RestController
@@ -30,6 +31,6 @@ public class BankController {
 
     @GetMapping
     public List<BankDTO> getBanks() {
-        return bankService.getBanks();
+        return bankService.getAllBanks();
     }
 }
